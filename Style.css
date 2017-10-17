@@ -13,9 +13,12 @@
   }
 }
 
+ /*
+    手機版的 css 都寫在這邊
+  */   
+
 @media screen and (max-width: 1023px) {
-  .container{ wid:auto; 
-  }
+  .container{ width:auto; }
   .menu-button {
       float: right;
       font-size: 25px;
@@ -33,13 +36,31 @@
     height: 40px;
   }
 
-  .menu-button-checkbox:checked ~ .menu {
-    display: block;
+  .menu-button-checkbox:checked ~ .menu { display: block; }
+  #my-avatar {
+    width: 100%; 
   }
 
-  /*
-    手機版的 css 都寫在這邊
-  */   
+  img {
+    max-width: 100%;
+    height: auto;   
+  }
+  
+  #my-avatar img {
+    display: block;
+    margin: 15px auto;
+  }
+  .item {
+    max-width: 100%;
+  }
+
+   form.contact-form {
+    width: 80%;
+  }
+  
+
+
+ 
 
 }
 
@@ -95,7 +116,6 @@
 
 
 .menu li {
- 
 
   display: inline-block;
 
